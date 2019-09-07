@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<unit xmlns="https://ulearn.me/schema/v2" title="Простое веб-приложение на Spring Boot" id="6e08726d-ff47-430e-81af-69c0fed73310" url="ExampleApp">
+<unit xmlns="https://ulearn.me/schema/v2" title="1. Простое веб-приложение на Spring Boot" id="6e08726d-ff47-430e-81af-69c0fed73310" url="ExampleApp">
   <slides>
     <add>S*.xml</add>
   </slides>
