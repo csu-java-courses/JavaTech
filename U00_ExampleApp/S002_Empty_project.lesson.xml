@@ -49,12 +49,12 @@
         Наш проект наследуется от
 
         ```
-        <parent>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-parent</artifactId>
-            <version>2.1.7.RELEASE</version>
-            <relativePath/> <!-- lookup parent from repository -->
-        </parent>
+        &lt;parent&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+            &lt;version&gt;2.1.7.RELEASE&lt;/version&gt;
+            &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+        &lt;/parent&gt;
         ```
 
         и большая часть зависимостей наследуется оттуда.
