@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 3. Контроллер" id="606698ed-29de-4b41-8bb4-a37aada8a812">
+    <markdown>
+
+        Контроллеры - классы в spring, обычно помеченные аннотацией `@Controller`, и содержащие методы отвечающие за обработку запросов пришедших на определенный URL‐путь по определенному http методу (GET/POST/...).
+
+        **3.1.** Создайте класс `com.example.demoweb.controller.PostsViewController`
+
+        **3.2.** Пометьте класс аннотацией `@Controller` из org.springframework.stereotype
+
+        **3.3.** Добавьте метод
+
+        <code language="java">
+        @ResponseBody
+        @RequestMapping(path = "/", method = RequestMethod.GET)
+        public String list() {
+            return "Здесь будет главная страница";
+        }
+        </code>
+
+
+        **3.4.** Запустите проект и убедитесь что теперь по [http://localhost:8000/](http://localhost:8000/) отображается наш текст.
+
+        **3.5.** Сделайте commit и push контроллера на github.
+
+        **3.6.** Добавьте метод для будущего отображения одного поста
+
+        <code language="java">
+        @ResponseBody
+        @RequestMapping(path = "/post/{id}", method = RequestMethod.GET)
+        public String single(@PathVariable("id") Long id) {
+            return "Здесь будет страница поста №" + id;
+        }
+        </code>
+
+
+        **3.7.** Запустите проект и убедитесь что теперь по [http://localhost:8000/post/3123456789](http://localhost:8000/post/3123456789)  отображается "`Здесь будет страница поста №3123456789`".
+
+        **3.8.** Сделайте commit и push заготовки метода отображения одного поста на github.
+
+    </markdown>
+</slide>
