@@ -20,34 +20,28 @@
         `Dependencies: Spring Web Starter`
 
         И скачайте сконфигурированный пустой проект по кнопке "Generate the project"
-    </markdown>
-    <markdown>
+
         **2.2.** Распакуйте скачанный demo-web.zip и откройте проект в IDEA.
 
         Это классическое java приложение с точкой входа в `public static void main` методе, который в нашем случае находится в классе `DemoWebApplication`
-    </markdown>
-    <markdown>
+
         **2.3.** Запустите приложение в отладочном режиме
 
         По логам при запуске видно что приложение запустилось на порту 8080 и готово обслужить http запросы.
 
         Вопрос: какой Servlet Container используется?
-    </markdown>
-    <markdown>
+
         **2.4.** Зайдите на [http://localhost:8080](http://localhost:8080) и убедитесь что приложение работает.
 
         Убедиться в этом можно остановив приложение и ещё раз зайдя на [http://localhost:8080](http://localhost:8080) Теперь по этому адресу будет не такая
-    </markdown>
-    <galleryImages>
-        <image>images/image2.png</image>
-    </galleryImages>
-    <markdown>
+
+        ![alt_text](images/image2.png "image_tooltip")
+
         страница, которая была возвращена спрингом, а сообщение браузера
-    </markdown>
-    <galleryImages>
-        <image>images/image3.png</image>
-    </galleryImages>
-    <markdown>
+
+        ![alt_text](images/image3.png "image_tooltip")
+
+
         **2.5.** Maven
 
         В корне проекта откройте файл pom.xml Это файл системы сборки и управления зависимостями maven. В прошлом семестре для этих целей мы использовали Gradle.
@@ -74,8 +68,7 @@
         - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.22
 
         Это зависимости с http сервером и контейнером сервлетов Apache Tomcat. Он встроен в наше spring boot приложение и позволяет нашему приложению обрабатывать http запросы.
-    </markdown>
-    <markdown>
+
         **2.6.** Сборка и запуск проекта из командной строки
 
         Для уменьшения веса репозитория и обеспечения одной версии maven'а у разработчиков, в проекте используется maven wrapper. Это скрипты в корне проекта в файлах mvnw для linux и mvnw.cmd для windows.
@@ -95,11 +88,9 @@
         Убедитесь что приложение запустилось и открывается в браузере.
 
         Умение запускать проект через командную строку необходимо при запуске на production сервере.
-    </markdown>
-    <markdown>
+
         **2.7.** Разместите "пустой" работающий проект на github, например [по этой инструкции](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
-    </markdown>
-    <markdown>
+
         **2.8.** Изменим порт приложения с 8080 на 8000.
 
         Для этого необходимо в `demo-web/src/main/resources/application.properties`
@@ -117,5 +108,6 @@
         Проверьте что проект запускается и работает на новом порту.
 
         Сделайте commit и push изменений в github.
+
     </markdown>
 </slide>
