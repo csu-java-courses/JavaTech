@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide xmlns="https://ulearn.me/schema/v2" title="Часть 1. Подготовка" id="da859e7d-7c23-49de-9171-8b27171080f6">
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 4. View" id="499514fd-b95f-4354-8ec6-2638145fb911">
     <markdown>
 
         В части 3 мы сделали код который в браузер возвращает простой текст. В этой части сделаем возврат html страницы, строящейся по шаблону через шаблонизатор [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html).

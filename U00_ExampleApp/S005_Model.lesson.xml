@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide xmlns="https://ulearn.me/schema/v2" title="Часть 1. Подготовка" id="da859e7d-7c23-49de-9171-8b27171080f6">
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 5. Модель" id="a7e5cecf-65e7-4618-aadc-8659f6a2d8c0">
     <markdown>
 
         В этой части мы создадим класс описывающий модель предметной области - пост с лайками. И сделаем его отображение на html странице.
