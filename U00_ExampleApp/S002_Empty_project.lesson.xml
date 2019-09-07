@@ -35,11 +35,11 @@
 
         Убедиться в этом можно остановив приложение и ещё раз зайдя на [http://localhost:8080](http://localhost:8080) Теперь по этому адресу будет не такая
 
-        ![alt_text](images/image2.png "image_tooltip")
+        ![alt_text](images/error.png)
 
         страница, которая была возвращена спрингом, а сообщение браузера
 
-        ![alt_text](images/image3.png "image_tooltip")
+        ![alt_text](images/error8080.png)
 
 
         **2.5.** Maven
@@ -93,16 +93,13 @@
 
         **2.8.** Изменим порт приложения с 8080 на 8000.
 
-        Для этого необходимо в `demo-web/src/main/resources/application.properties`
-
-        добавить строчку
+        Для этого необходимо в `demo-web/src/main/resources/application.properties` добавить строчку
 
         ```
         server.port = 8000
         ```
 
         Прочие доступные настройки можно найти в properties класса `org.springframework.boot.autoconfigure.web.ServerProperties`
-
         и в соседних классах. Также в application.properties в IDEA работает навигация (Ctrl+B).
 
         Проверьте что проект запускается и работает на новом порту.

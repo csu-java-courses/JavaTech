@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 1. Подготовка" id="da859e7d-7c23-49de-9171-8b27171080f6">
+    <markdown>
+
+        В части 3 мы сделали код который в браузер возвращает простой текст. В этой части сделаем возврат html страницы, строящейся по шаблону через шаблонизатор [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html).
+
+        **4.1.** Чтобы подключить шаблонизатор Thymeleaf нам нужно в pom.xml добавить зависимость
+
+        <code language="html">
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        </code>
+
+        **4.2.** В demo-web/src/main/resources/templates/ создайте файл list.html с таким содержимым
+
+        <code language="html">
+        &lt;!DOCTYPE html&gt;
+        &lt;html xmlns:th=&quot;http://www.thymeleaf.org&quot;&gt;
+            &lt;head&gt;
+                &lt;title&gt;TODO&lt;/title&gt;
+                &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;/&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1 th:text=&quot;${appName}&quot; style=&quot;color: green&quot;&gt;Default app name&lt;/h1&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+        </code>
+
+
+        **4.3.** В `PostsViewController` метод list сделайте таким
+
+        <code language="java">
+        @RequestMapping(path = "/", method = RequestMethod.GET)
+        public String list(Model model) {
+            model.addAttribute("appName", "Сентябрь горит");
+            return "list";
+        }
+        </code>
+
+
+        **4.4.** Запустите проект и убедитесь что теперь по [http://localhost:8000/](http://localhost:8000/) отображается
+
+        ![alt_text](images/main.png)
+
+        если текст другой, поменяйте метод list чтобы текст был как на картинке выше.
+
+        **4.5.** Сделайте commit и push подключенного шаблонизатора и первой шаблонизированной страницы на github.
+    </markdown>
+</slide>

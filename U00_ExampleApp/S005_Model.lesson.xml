@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 1. Подготовка" id="da859e7d-7c23-49de-9171-8b27171080f6">
+    <markdown>
+
+        В этой части мы создадим класс описывающий модель предметной области - пост с лайками. И сделаем его отображение на html странице.
+
+        **5.1.** Создайте класс `com.example.demoweb.model.Post` с **private** полями
+
+        - String **text**;
+        - Integer **likes**;
+
+        С конструктором, позволяющим задать текст поста.
+
+        И с геттерами полей.
+
+        **5.2.** Создайте класс `com.example.demoweb.service.PostService`
+
+        Пометьте его аннотацией `@Service` из пакета `org.springframework.stereotype`
+
+        Создайте в этом классе метод `listAllPosts()` возвращающий список постов, и реализуйте его так, что он возвращал список из трёх постов с текстами на ваше усмотрение.
+
+        **5.3.** Добавьте в `PostsViewController` поле `PostService postsService`;
+
+        пометьте его аннотацией `@Autowired` из пакета `org.springframework.beans.factory.annotation`
+
+        **5.4.** Добавьте в методе `list` контроллера в модель список постов, возвращаемых
+
+        <code language="java">
+        postsService.listAllPosts()
+        </code>
+
+
+        **5.5.** И добавьте во view отображение списка постов
+
+        <code language="html">
+        &lt;ul&gt;
+            &lt;li th:each=&quot;p : ${posts}&quot;&gt;
+                &lt;p th:text=&quot;${p.text}&quot;&gt;text&lt;/p&gt;
+                &lt;p&gt;(лайков &lt;span th:text=&quot;${p.likes}&quot;&gt;999&lt;/span&gt;)&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        </code>
+
+        **5.6.** Проверьте что список постов выводится корректно и сделайте commit и push модели и отображения списка постов на github.
+
+    </markdown>
+</slide>
