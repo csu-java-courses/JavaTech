@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 1.1" id="5be73c4e-c9fd-483f-9ecf-67292539fdb8">
     <scoring group="homework" passedTestsScore="0" codeReviewScore="5"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
         Выполните все части модуля отправьте ссылку на репозиторий для проверки.
     </markdown>
-    <exercise.file file="task01.java">
+    <exercise.file>
         <initialCode>https://github.com/username/javatech1</initialCode>
         <hideExpectedOutput>true</hideExpectedOutput>
         <comment>Принято</comment>
