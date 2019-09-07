@@ -54,7 +54,7 @@
 
         Наш проект наследуется от
 
-        <code language="xml">
+        <code language="html">
         &lt;parent&gt;
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
