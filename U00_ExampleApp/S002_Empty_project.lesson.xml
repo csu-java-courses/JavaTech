@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 2. Пустой проект" id="45b03205-bdd6-4d2c-b72a-429a14938b9b">
+    <markdown>
+        **2.1.** На сайте [start.spring.io](https://start.spring.io) задайте следующие настройки
+
+        Project: Maven Project
+
+        ```
+        Language: Java
+        Spring Boot: 2.1.7
+        Project Metadata:
+        Group: com.example
+        Artifact: demo-web
+        Packaging: Jar
+        Java: 8
+        ```
+
+        В качестве единственной зависимости добавьте
+
+        `Dependencies: Spring Web Starter`
+
+        И скачайте сконфигурированный пустой проект по кнопке "Generate the project"
+
+        **2.2.** Распакуйте скачанный demo-web.zip и откройте проект в IDEA.
+
+        Это классическое java приложение с точкой входа в `public static void main` методе, который в нашем случае находится в классе `DemoWebApplication`
+
+        **2.3.** Запустите приложение в отладочном режиме
+
+        По логам при запуске видно что приложение запустилось на порту 8080 и готово обслужить http запросы.
+
+        Вопрос: какой Servlet Container используется?
+
+        **2.4.** Зайдите на [http://localhost:8080](http://localhost:8080) и убедитесь что приложение работает.
+
+        Убедиться в этом можно остановив приложение и ещё раз зайдя на [http://localhost:8080](http://localhost:8080) Теперь по этому адресу будет не такая
+
+        ![alt_text](images/image2.png "image_tooltip")
+
+        страница, которая была возвращена спрингом, а сообщение браузера
+
+        ![alt_text](images/image3.png "image_tooltip")
+
+
+        **2.5.** Maven
+
+        В корне проекта откройте файл pom.xml Это файл системы сборки и управления зависимостями maven. В прошлом семестре для этих целей мы использовали Gradle.
+
+        Наш проект наследуется от
+
+        ```
+        <parent>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.1.7.RELEASE</version>
+            <relativePath/> <!-- lookup parent from repository -->
+        </parent>
+        ```
+
+        и большая часть зависимостей наследуется оттуда.
+
+        В IDEA откройте окно Project (Alt+1) и в External Libraries посмотрите какие зависимости были скачаны.
+
+        Среди прочих есть зависимости
+
+        - Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.22
+        - Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.22
+        - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.22
+
+        Это зависимости с http сервером и контейнером сервлетов Apache Tomcat. Он встроен в наше spring boot приложение и позволяет нашему приложению обрабатывать http запросы.
+
+        **2.6.** Сборка и запуск проекта из командной строки
+
+        Для уменьшения веса репозитория и обеспечения одной версии maven'а у разработчиков, в проекте используется maven wrapper. Это скрипты в корне проекта в файлах mvnw для linux и mvnw.cmd для windows.
+
+        Для сборки проекта в командной строке выполните
+
+        ```
+        ./mvnw package
+        ```
+
+        и теперь для запуска проекта перейдите в папку target и выполните
+
+        ```
+        java -jar demo-web-0.0.1-SNAPSHOT.jar
+        ```
+
+        Убедитесь что приложение запустилось и открывается в браузере.
+
+        Умение запускать проект через командную строку необходимо при запуске на production сервере.
+
+        **2.7.** Разместите "пустой" работающий проект на github, например [по этой инструкции](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
+
+        **2.8.** Изменим порт приложения с 8080 на 8000.
+
+        Для этого необходимо в `demo-web/src/main/resources/application.properties`
+
+        добавить строчку
+
+        ```
+        server.port = 8000
+        ```
+
+        Прочие доступные настройки можно найти в properties класса `org.springframework.boot.autoconfigure.web.ServerProperties`
+
+        и в соседних классах. Также в application.properties в IDEA работает навигация (Ctrl+B).
+
+        Проверьте что проект запускается и работает на новом порту.
+
+        Сделайте commit и push изменений в github.
+
+    </markdown>
+</slide>
