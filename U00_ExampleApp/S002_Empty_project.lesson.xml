@@ -37,6 +37,12 @@
 
         ![alt_text](images/image2.png "image_tooltip")
 
+    </markdown>
+    <galleryImages>
+        <image>images/image2.png</image>
+    </galleryImages>
+    <markdown>
+
         страница, которая была возвращена спрингом, а сообщение браузера
 
         ![alt_text](images/image3.png "image_tooltip")
@@ -48,7 +54,7 @@
 
         Наш проект наследуется от
 
-        ```
+        <code language="xml">
         &lt;parent&gt;
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
@@ -56,6 +62,7 @@
             &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
         &lt;/parent&gt;
         ```
+        </code>
 
         и большая часть зависимостей наследуется оттуда.
 
