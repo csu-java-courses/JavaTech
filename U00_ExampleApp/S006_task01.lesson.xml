@@ -4,7 +4,7 @@
     <markdown>
         Выполните все части модуля отправьте ссылку на репозиторий для проверки.
     </markdown>
-    <exercise.file>
+    <exercise.file file="task01.java">
         <initialCode>https://github.com/username/javatech1</initialCode>
         <hideExpectedOutput>true</hideExpectedOutput>
         <comment>Принято</comment>
