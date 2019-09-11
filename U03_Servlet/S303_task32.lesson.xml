@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 3.2" id="58830254-f7f6-4d52-ae68-31bde50b9a5b">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="5"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        Сделайте Servlet + JSP приложение, показывающее список файлов и папок компьютера.
+        - Путь базовой дерекотории должен задаваться через URL-параметры.
+        - Пользователь должен иметь возможность перемещаться по каталогам.
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech32</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
