@@ -4,7 +4,9 @@
 
         В этой части мы создадим класс описывающий модель предметной области - пост с лайками. И сделаем его отображение на html странице.
 
-        ### 5.1. Создайте класс `com.example.demoweb.model.Post` с **private** полями
+        ### 5.1. Модель
+
+        Создайте класс `com.example.demoweb.model.Post` с **private** полями
 
         - String **text**;
         - Integer **likes**;
@@ -13,24 +15,32 @@
 
         И с геттерами полей.
 
-        ### 5.2. Создайте класс `com.example.demoweb.service.PostService`
+        ### 5.2. Сервис
+
+        Создайте класс `com.example.demoweb.service.PostService`
 
         Пометьте его аннотацией `@Service` из пакета `org.springframework.stereotype`
 
         Создайте в этом классе метод `listAllPosts()` возвращающий список постов, и реализуйте его так, что он возвращал список из трёх постов с текстами на ваше усмотрение.
 
-        ### 5.3. Добавьте в `PostsViewController` поле `PostService postsService`;
+        ### 5.3. Инъекция зависимости
+
+        Добавьте в `PostsViewController` поле `PostService postsService`;
 
         пометьте его аннотацией `@Autowired` из пакета `org.springframework.beans.factory.annotation`
 
-        ### 5.4. Добавьте в методе `list` контроллера в модель список постов, возвращаемых
+        ### 5.4. Использование зависимости
+
+        Добавьте в методе `list` контроллера в модель список постов, возвращаемых
 
         <code language="java">
         postsService.listAllPosts()
         </code>
 
 
-        ### 5.5. И добавьте во view отображение списка постов
+        ### 5.5. Отображение модели
+
+        И добавьте во view отображение списка постов
 
         <code language="html">
         &lt;ul&gt;
@@ -41,7 +51,9 @@
         &lt;/ul&gt;
         </code>
 
-        ### 5.6. Проверьте что список постов выводится корректно и сделайте commit и push модели и отображения списка постов на github.
+        Проверьте что список постов выводится корректно.
+
+        Сделайте commit и push модели и отображения списка постов на github.
 
     </markdown>
 </slide>

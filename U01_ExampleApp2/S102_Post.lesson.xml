@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Часть 7. Создание нового поста" id="bdb07940-56d7-48c0-914b-293cd0f067d7">
+    <markdown>
+        Для передачи данных через http можно использовать как параметры get запроса, через url, так и передавать данные например post запросом. Для get запроса обычно есть ограничение на длину в 2000 символов. Поэтому большие данные принято передавать post запросом, где ограничения на размер передаваемых данных куда менее строгие. В этой части мы сделаем html страницу с тегом form и будет с помощью него методом post передавать текст нового поста.
+
+        ### 7.1. Страница добавления поста
+
+        По аналогии с list.html сделайте create.html
+
+        в нём тег `div class="row article"` замените на
+
+
+        <code language="html">
+        &lt;div class=&quot;row&quot;&gt;
+           &lt;div class=&quot;col-md-12&quot;&gt;
+               &lt;form method=&quot;post&quot;&gt;
+                   &lt;div class=&quot;form-group&quot;&gt;
+                       &lt;textarea name=&quot;text&quot; class=&quot;form-control&quot; cols=&quot;30&quot; rows=&quot;7&quot; placeholder=&quot;Text&quot;&gt;&lt;/textarea&gt;
+                   &lt;/div&gt;
+                   &lt;div class=&quot;form-group&quot;&gt;
+                       &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;Добавить новый пост&quot;&gt;
+                   &lt;/div&gt;
+               &lt;/form&gt;
+           &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+
+
+        ### 7.2. Контроллер добавления поста
+
+        По соседству с `PostsViewController` создайте класс PostsCreateController с методом create,
+        по аналогии с `PostsViewController#list` который бы отдавал страницу `create.html` по url [http://localhost:8000/new](http://localhost:8000/new)
+
+        ### 7.3. Метод обработки запроса
+
+        Создайте метод doCreate который бы обрабатывал http запросы на тот же url но уже не методом GET, а методом POST. И в качестве аргумента принимал бы
+
+        <code language="java">
+        @ModelAttribute("text") String text
+        </code>
+
+        Проверьте что данные со страницы после нажатия кнопки "Добавить новый пост" приходят в метод `doCreate`.
+
+        Сделайте редирект в методе doCreate, для этого возвращайте
+
+        <code language="java">
+        return "redirect:/";
+        </code>
+
+        ### 7.4. Сервис для добавления поста
+
+        В PostService добавьте метод
+
+        <code language="java">
+        public void create(String text) {
+           posts.add(new Post(text, new Date()));
+        }
+        </code>
+
+
+        Добавьте поле posts и вынесите первоначальное его наполнение в блок инициализации.
+
+        Поправьте метод `listAllPosts()`.
+
+        ### 7.5.
+
+        Вызовите метод `PostService#create` в методе `doCreate` класса `PostsCreateController`. Проверьте что новые посты создаются и отображаются на главной страницы.
+
+        Сделайте commit и push на github.
+
+    </markdown>
+</slide>
