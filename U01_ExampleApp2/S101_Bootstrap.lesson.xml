@@ -3,7 +3,7 @@
     <markdown>
         Для стилизации элементов html страницы и задания внешнего вида web приложения используется [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets), а довольно часто используются и целые [CSS frameworks](https://en.wikipedia.org/wiki/CSS_framework). Мы в нашем учебном проекте возьмём один из таких CSS фреймворков - [Bootstrap](https://getbootstrap.com/) v4.3.1.
 
-        #### 6.1. Подключение Bootstrap как внешний ресурс
+        ### 6.1. Подключение Bootstrap как внешний ресурс
 
         Добавьте в list.html в тег head следующий тег:
 
@@ -25,7 +25,7 @@
 
         Для полной перезагрузки страницы, с перезагрузкой всего закешированного, в хроме можно использовать `Ctrl+Shift+R`.
 
-        #### 6.2. Вёрстка с использованием классов Bootstrap
+        ### 6.2. Вёрстка с использованием классов Bootstrap
 
         Измените в `list.html` тег `body` чтобы его содержимое стало таким:
 
@@ -56,7 +56,7 @@
 
         Запустите проект. Убедитесь что всё работает. Сделайте commit с Bootstrap вёрсткой и сделайте push этого коммита на github.
 
-        **6.3.** [Responsive](https://en.wikipedia.org/wiki/Responsive_web_design)
+        ### 6.3. [Responsive](https://en.wikipedia.org/wiki/Responsive_web_design)
 
         В Chrome в DevTools есть возможность включить режим эмуляция отображения как на смартфоне или планшете (`Ctrl+Shift+M`).
 
