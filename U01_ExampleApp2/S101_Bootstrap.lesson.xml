@@ -65,20 +65,8 @@
 Сейчас наша страница не адаптирована для мобильных устройств и на них выглядит плохо, элементы слишком мелкие.
 
 
-<table>
-  <tr>
-   <td>
-
-<img src="images/resp-before.png" width="" alt="" title="До"/>
-
-   </td>
-   <td>
-
-<img src="images/resp-after.png" width="" alt="" title="После"/>
-
-   </td>
-  </tr>
-</table>
+| ![alt_text](images/resp-before.png)  | ![alt_text](images/resp-after.png) |
+| ----- | ----- |
 
 
 Добавьте соответствующий тег, как это сказано в [документации](https://getbootstrap.com/docs/4.3/getting-started/introduction/#responsive-meta-tag).
