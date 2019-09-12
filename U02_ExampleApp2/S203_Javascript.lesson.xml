@@ -1,6 +1,161 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide xmlns="https://ulearn.me/schema/v2" title="Часть 8. JavaScript" id="3bc34689-b8fa-4f01-accf-9d71cd361a8b">
     <markdown>
-        // TODO
+
+
+        В этой части мы добавим возможность ставить лайки постам с помощью javascript, без перезагрузки страницы.
+
+        ### 8.1. Скрипт
+
+        У веб серверов обычно есть возможность отдавать не только динамически сгенерированные данные, но и статический контент, файлы как они есть.
+
+        Добавьте в src/main/resources файл main.js со след. содержимым:
+
+        <code language="javascript">
+        alert(&quot;debug&quot;);
+        </code>
+
+        Добавьте в list.html в тег head
+
+        <code language="javascript">
+        &lt;script src=&quot;/main.js&quot;&gt;&lt;/script&gt;
+        </code>
+
+        Запустите проект и в браузере в DevTools на вкладке Network убедитесь что ресурс не загружается, Status 404.
+
+        Это происходит потому что Spring Boot отдаёт статические файлы лишь из определённых папок,
+        по умолчанию это папка src/main/resources/static. Переместите main.js туда и проверьте
+        что теперь при открытии [http://localhost:8000/](http://localhost:8000/) будет всплывать
+        окно со словом **debug**.
+
+        ### 8.2. Обработчики событий
+
+        Мы будем делать так, чтобы по нажатию на кнопку с количеством лайков,
+        количество лайков у этого поста увеличивалось на один и отображалось новое количество пришедшее
+        с сервера. Для этого мы в main.js навесим обработчик нажатия на элемент страницы, на кнопку с лайками.
+        Чтобы в JavaScript навесить обработчик на элемент необходимо чтобы этот элемент был доступен,
+        т.е. чтобы браузер отрендерил html страницу. Для этого можно задать обработчик события `onload`
+        глобального объекта window, и после этого наш main.js будет выглядеть так:
+
+        <code language="javascript">
+        window.onload = function() {
+           alert("debug");
+        };
+        </code>
+
+
+        Проверьте что теперь окно всплывает после отображения содержимого страницы,
+        а не на фоне ещё пустой страницы как это было в 8.1.
+
+        ### 8.3. Обработчик клика
+
+        Теперь давайте собственно навесим обработчик клика на кнопку лайка.
+        Для этого `alert("debug");` замените на:
+
+        <code language="javascript">
+        $(".like").click((e) => {
+           alert("debug: button text: " + e.currentTarget.innerText);
+        });
+        </code>
+
+
+        Теперь окно должно всплывать по нажатию на любую кнопку добавления лайка, а не после загрузки страницы.
+        В этом коде используется $(**".like"**) это функция из jQuery - очень часто используемой js библиотеки.
+        Но jQuery не подключена на нашу страницу и этот код пока не работает.
+        Чтобы подключить jQuery добавьте следующее в тег head:
+
+        <code language="javascript">
+        &lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+        </code>
+
+        Проверьте что теперь окно с debug текстом появляется по нажатию на кнопку лайка.
+
+        p.s. Несколько пояснений:
+
+        `$(".like")` - это создание jquery объекта по [jQuery selector](https://api.jquery.com/category/selectors/)'у переданному в качестве аргумента.
+
+        jQuery селекторы практически совпадают с [CSS селекторами](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) и в нашем случае **".like"** будет выбирать все html элементы страницы имеющие class **like**.
+
+
+        ### 8.4. Бэкенд
+
+        Теперь давайте займёмся бэкенд частью. Сделайте `LikesController` с таким методом:
+
+        <code language="java">
+        @ResponseBody
+        @RequestMapping(path = "/post/{id}/like", method = RequestMethod.POST)
+        public String like(@PathVariable("id") Long id) {
+           int likes = likesService.like(id);
+           return "" + likes;
+        }
+        </code>
+
+
+        Создайте класс `LikesService` с методом `like`.
+
+        Тело метода `like` сделайте таким:
+
+        <code language="java">
+        Post post = postService.listAllPosts().get(postId.intValue());
+        post.setLikes(post.getLikes() + 1);
+        return post.getLikes();
+        </code>
+
+
+        Добавьте `@Autowired` поле `LikesService likesService;` в `LikesController`
+        чтобы подключить этот сервис в контроллер. Это один из способов сделать [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)
+
+        Аналогично подключите `postService` в `LikesService`.
+
+        Добавьте в класс `Post` сеттер для поля `likes`.
+
+        Добавьте в класс `Post` поле `private Long id;`
+        Добавьте в конструктор первым аргументом передачу `id` и в теле конструктора устанавливайте поле `id`.
+
+        Поправьте `PostService` так чтобы `id` постов соответствовали их индексам в `List<Post> posts`.
+
+        Не забудьте поправить метод `create`.
+
+        Теперь, когда у нас готова бэкенд часть для оставления лайка посту, мы можем её протестировать через какой-нибудь REST Client, например [Postman](https://www.getpostman.com/downloads/)
+
+
+        |![alt_text](images/postman.png)|
+        |-----|
+
+
+        **8.5.** Теперь у нас есть точка в бэкенде, обрабатывающая запрос на добавление лайка и мы можем обратиться к ней из main.js. Но для этого нам надо знать id поста, для которого мы хотим поставить лайк.
+
+        Добавьте getter на `id` в класс `Post`.
+
+        И добавьте в list.html в тег `button` кнопки лайка атрибут
+
+        <code language="javascript">
+        th:attr="data-post-id=${post.id}"
+        </code>
+
+        Теперь в html странице у кнопок постов будут id постов, к которым они относятся.
+
+        И нам осталось в main.js получить этот id, сделать запрос и отобразить ответ.
+
+        В main.js обработчик клика на кнопку лайка сделайте таким:
+
+        <code language="javascript">
+        var btn = $(e.currentTarget);
+        var postId = btn.attr("data-post-id");
+        btn.attr("disabled", "disabled");
+        $.post("/post/" + postId + "/like", (data) => {
+           btn.text("" + data + " ❤");
+           btn.removeClass("btn-secondary");
+           btn.addClass("btn-danger");
+        });
+        </code>
+
+
+        Проверьте что лайки добавляются.
+
+        Откройте три вкладки [http://localhost:8000/](http://localhost:8000/) в браузере и нажмите лайк для первого поста в каждой из них. Заметьте что в последней вкладке мы лайкнули на 3.
+
+        Сделайте commit и push на github.
+
     </markdown>
 </slide>
