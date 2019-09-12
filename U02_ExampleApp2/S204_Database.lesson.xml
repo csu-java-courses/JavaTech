@@ -7,10 +7,8 @@
 
         ### 9.1. Скачайте patch подключения базы
 
-        [20190912_part9_db.patch](download/20190912_part9_db.patch)
-    </markdown>
-        <gallery>download/</gallery>
-    <markdown>
+        [part9.patch](part9.patch)
+
         ### 9.2. В IDEA примените патч
 
         Главное меню -> VCS -> Apply Patch...
