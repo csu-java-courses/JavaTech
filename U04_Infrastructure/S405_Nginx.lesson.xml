@@ -10,9 +10,9 @@
         * [Балансировка нагрузки](https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
         * [SSL termination](https://en.wikipedia.org/wiki/TLS_termination_proxy)
 
-        Мы воспользуемся популярным приложением `nginx` для обратного проксирования и ssl termination на нашем сервере.
+        Мы воспользуемся популярным приложением `nginx` для обратного проксирования.
 
-        Присвойте вашему виртуальному серверу имя example.com при помощи файла hosts.
+        Присвойте вашему виртуальному серверу имя example.com при помощи файла `hosts`.
 
         [https://1cloud.ru/help/dns/file-hosts](https://1cloud.ru/help/dns/file-hosts)
 
@@ -26,7 +26,7 @@
 
         ```
         location / {
-        proxy_pass http://127.0.0.1:8080;
+            proxy_pass http://127.0.0.1:8080;
         }
         ```
 
@@ -36,16 +36,17 @@
 
         ```
         location /tomcat {
-        proxy_pass http://127.0.0.1:8080/;
+            proxy_pass http://127.0.0.1:8080/;
         }
         ```
 
-        Здесь /tomcat означает, что nginx будет обрабатывать только запросы, начинающиеся с /tomcat, а дополнительный / в proxy_pass сообщает nginx, что мы хотим отрезать этот префикс при передаче запроса в tomcat.
+        Здесь `/tomcat` означает, что nginx будет обрабатывать только запросы, начинающиеся с `/tomcat`, а дополнительный `/` в `proxy_pass` сообщает `nginx`,
+        что мы хотим отрезать этот префикс при передаче запроса в tomcat.
 
         Например запрос `http://example.com/tomcat/manager/html`
         Превратится в запрос `http://127.0.0.1/manager/html`
 
-        Добавьте в конфиг nginx дополнительную секцию location,
+        Добавьте в конфиг nginx дополнительную секцию `location`,
         которая будет перенаправлять запросы `/spring` в `http://127.0.0.1:8000/;`
 
         Проверьте, что теперь работают обе ссылки

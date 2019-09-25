@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide xmlns="https://ulearn.me/schema/v2" title="Запуск приложения" id="fab8bf66-5203-4f55-89cf-cb317ecba004">
+<slide xmlns="https://ulearn.me/schema/v2" title="Контейнер сервлетов" id="fab8bf66-5203-4f55-89cf-cb317ecba004">
     <markdown>
         Соберите приложения из 3 модуля.
         У вас должен получиться war-файл, который нельзя запустить из командной строки,
