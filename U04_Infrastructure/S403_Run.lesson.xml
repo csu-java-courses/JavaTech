@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide xmlns="https://ulearn.me/schema/v2" title="Установка linux-сервера" id="f09f6f09-b193-4727-bec1-b09d120439d1">
+<slide xmlns="https://ulearn.me/schema/v2" title="Запуск приложения" id="6c5b6872-7721-451f-98c2-52dcc7d095f9">
     <markdown>
         Установите на сервере JDK [https://help.ubuntu.ru/wiki/java](https://help.ubuntu.ru/wiki/java)
 
