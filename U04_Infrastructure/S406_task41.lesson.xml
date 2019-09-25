@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 4.1" id="80e1ad60-682c-404c-89bb-b551e209f1a8">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        Напишите инструкцию по развертыванию виртуального сервера и веб-приложений на нем.
+    </markdown>
+    <exercise.file>
+        <initialCode>1. Установить VirtualBox по ссылке http://...</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>

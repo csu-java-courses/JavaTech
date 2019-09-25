@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Установка linux-сервера" id="f09f6f09-b193-4727-bec1-b09d120439d1">
+    <markdown>
+        Выполните установку и настройку сервера по инструкции
+
+        [https://hibbard.eu/install-ubuntu-virtual-box/](https://hibbard.eu/install-ubuntu-virtual-box/)
+
+        Дополнительные материалы:
+
+        - [Шпаргалка по командам linux](https://forum.ubuntu.ru/index.php?topic=14535.0)
+        - [Установка ubuntu server в virtualbox ](https://www.google.com/search?q=%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0+ubuntu+server+%D0%B2+virtualbox)
+        - [Настройка сетевого моста в virtualbox](https://www.google.com/search?q=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B3%D0%BE+%D0%BC%D0%BE%D1%81%D1%82%D0%B0+%D0%B2+virtualbox)
+        - [Настройка ssh доступа по ключу](https://www.google.com/search?q=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+ssh+%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0+%D0%BF%D0%BE+%D0%BA%D0%BB%D1%8E%D1%87%D1%83)
+        - [Настройка прокси в linux](https://www.google.com/search?q=%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0+%D0%BF%D1%80%D0%BE%D0%BA%D1%81%D0%B8+%D0%B2+linux)
+
+        Узнать ip, полученный сервером можно с помощью команды `ifconfig`
+
+        В конце этого шага проверьте, что все условия выполнены:
+
+        1. Сервер запускается
+        2. К серверу можно подключиться по ssh без ввода пароля
+        3. На сервер можно скачивать файлы из интернета (например с помощью wget)
+
+    </markdown>
+</slide>

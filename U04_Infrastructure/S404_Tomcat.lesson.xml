@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Запуск приложения" id="fab8bf66-5203-4f55-89cf-cb317ecba004">
+    <markdown>
+        Соберите приложения из 3 модуля.
+        У вас должен получиться war-файл, который нельзя запустить из командной строки,
+        но можно поместить в контейнер сервлетов (например Tomcat).
+
+        Скачайте и установите tomcat по инструкции
+        [https://linuxize.com/post/how-to-install-tomcat-9-on-ubuntu-18-04/](https://linuxize.com/post/how-to-install-tomcat-9-on-ubuntu-18-04/)
+
+        Чтобы найти актуальную сборку tomcat, воспользуйтесь ссылкой
+        [http://apache.org/dist/tomcat/tomcat-9/](http://apache.org/dist/tomcat/tomcat-9/)
+
+        После того как tomcat запустился на сервере, воспользуйтесь Manager App чтобы загрузить в контейнер war-файл
+        (секция “WAR file to deploy”).
+
+        В списке Applications появится ссылка на приложение,
+        по которой можно будет проверить работоспособность приложения.
+
+    </markdown>
+</slide>

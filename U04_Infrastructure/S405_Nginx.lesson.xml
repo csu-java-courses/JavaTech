@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Проксирование" id="7dd015bf-12df-4c94-8b44-5697d69f54ac">
+    <markdown>
+        На данный момент на вашем сервере должно быть запущено 2 отдельных процесса с веб-приложениями на портах 8000 и 8080.
+
+        При построении архитектуры веб-сервисов чаще всего возникают следующие задачи:
+
+        * [Снижение единовременной нагрузки на приложение](https://ru.wikipedia.org/wiki/C10k)
+        * [Обратное проксирование](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D0%BA%D1%81%D0%B8)
+        * [Балансировка нагрузки](https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0_%D0%BD%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B8)
+        * [SSL termination](https://en.wikipedia.org/wiki/TLS_termination_proxy)
+
+        Мы воспользуемся популярным приложением `nginx` для обратного проксирования и ssl termination на нашем сервере.
+
+        Присвойте вашему виртуальному серверу имя example.com при помощи файла hosts.
+
+        [https://1cloud.ru/help/dns/file-hosts](https://1cloud.ru/help/dns/file-hosts)
+
+        Настройте проксирование по инструкции
+
+        [https://websiteforstudents.com/configure-nginx-proxy-server-for-tomcat-9-on-ubuntu-16-04-17-10-18-04/](https://websiteforstudents.com/configure-nginx-proxy-server-for-tomcat-9-on-ubuntu-16-04-17-10-18-04/)
+
+        Откройте браузер и убедитесь, что tomcat доступен по адресу [http://example.com/](http://example.com/)
+
+        Настройка
+
+        ```
+        location / {
+        proxy_pass http://127.0.0.1:8080;
+        }
+        ```
+
+        означает, что при обращении к любому url, nginx сделает запрос к tomcat с таким же url и передаст ответ tomcat клиенту.
+
+        Добавим префикс
+
+        ```
+        location /tomcat {
+        proxy_pass http://127.0.0.1:8080/;
+        }
+        ```
+
+        Здесь /tomcat означает, что nginx будет обрабатывать только запросы, начинающиеся с /tomcat, а дополнительный / в proxy_pass сообщает nginx, что мы хотим отрезать этот префикс при передаче запроса в tomcat.
+
+        Например запрос `http://example.com/tomcat/manager/html`
+        Превратится в запрос `http://127.0.0.1/manager/html`
+
+        Добавьте в конфиг nginx дополнительную секцию location,
+        которая будет перенаправлять запросы `/spring` в `http://127.0.0.1:8000/;`
+
+        Проверьте, что теперь работают обе ссылки
+
+        - [http://example.com/tomcat/](http://example.com/tomcat/)
+        - [http://example.com/spring/](http://example.com/spring/)
+
+
+    </markdown>
+</slide>
