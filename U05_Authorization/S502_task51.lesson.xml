@@ -3,7 +3,7 @@
     <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
-        #Задание:
+        ###Задание:
 
         В проект сделанный при выполнении
         [Задачи 3.2](https://ulearn.me/course/javatech/Zadacha_3_2_58830254-f7f6-4d52-ae68-31bde50b9a5b)
