@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 5.1" id="96232ef7-5c4c-4094-80fe-08e609a4eef9">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        #Задание:
+
+        В проект сделанный при выполнении
+        [Задачи 3.2](https://ulearn.me/course/javatech/Zadacha_3_2_58830254-f7f6-4d52-ae68-31bde50b9a5b)
+        добавить авторизацию.
+
+        - При входе на сайт, если пользователь незалогинен,
+        то показывать ему страницу логина со ссылкой на страницу регистрации.
+        На странице логина спрашивать логин и пароль.
+        На странице регистрации: логин, пароль, email.
+
+        - Если пользователь залогинен, то показывать ему содержимое его "домашней папки",
+        название папки пусть совпадает с логином.
+        А родительская папка для домашних может находится в любом удобно месте,
+        например c:\Users\Student\filemanager\
+
+        - Не давать пользователю смотреть содержимое вне его домашней папки.
+
+        - На главной странице со списком файлов/папок показывать справа сверху кнопку выхода.
+        И разлогинивать пользователя по этой кнопке.
+
+        - Убедитесь в Chrome DevTools что в cookies сохранился id сессии. Для jetty этот параметр выглядит так:
+
+        |![cookie_for_http_session_in_chrome_dev_tools](images/cookie.png)|
+        | ----- |
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech51</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>

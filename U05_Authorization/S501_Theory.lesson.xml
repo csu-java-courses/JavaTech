@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Авторизация. Теория" id="80e6cdaa-8fbb-40d7-93c3-5214b29ef6ca">
+    <markdown>
+        В этом модуле мы реализуем регистрацию и авторизацию пользователей для файлового менеджера на сервлетах,
+        который мы сделали в модуле 3 в [Задаче 3.2.](https://ulearn.me/Course/javatech/Zadacha_3_2_58830254-f7f6-4d52-ae68-31bde50b9a5b)
+
+        Теоретические материалы по механизму авторизации, HttpSession, Cookie:
+
+        Курс "Разработка веб сервиса на Java" на stepik.org
+        Часть 2.1 шаги
+        [1,](https://stepik.org/lesson/12397/step/1?unit=2830)
+        [2,](https://stepik.org/lesson/12397/step/2?unit=2830)
+        [3](https://stepik.org/lesson/12397/step/3?unit=2830)
+        Часть 2.2 шаг
+        [12](https://stepik.org/lesson/12401/step/12?unit=2831)
+        Часть 2.3 шаги
+        [13,](https://stepik.org/lesson/12497/step/13?unit=2967)
+        [14.](https://stepik.org/lesson/12497/step/14?unit=2967)
+
+        Если желаете повторить по java такие темы как Generics, Collections и Map, Наследование,
+        то можно посмотреть другие шаги части 2 этого курса.
+
+        Некоторые замечания к теории:
+        * В этом курсе в качестве контейнера сервлетов используется Jetty,
+        а не Tomcat, который вы возможно использовали при решении задачи 3.2.
+        Можно продолжить делать на Tomcat, можно заиспользовать jetty - большой разницы не будет.
+        * Лектор курса часто называет интерфес java.util.Map словом "карта"
+        * [пример кода](https://github.com/vitaly-chibrikov/stepic_java_webserver/tree/master/L2.1%20Authorization)
+        по части 2 курса.
+    </markdown>
+</slide>
