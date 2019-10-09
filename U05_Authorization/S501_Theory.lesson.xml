@@ -4,9 +4,17 @@
         В этом модуле мы реализуем регистрацию и авторизацию пользователей для файлового менеджера на сервлетах,
         который мы сделали в модуле 3 в [Задаче 3.2.](https://ulearn.me/Course/javatech/Zadacha_3_2_58830254-f7f6-4d52-ae68-31bde50b9a5b)
 
-        Теоретические материалы по механизму авторизации, HttpSession, Cookie:
+        **Теоретические материалы по авторизации:**
+
+        [HttpSession](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/HttpSession.html)
+
+        [Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+        [[1]](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+        [[2]](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/Cookie.html)
+
 
         Курс "Разработка веб сервиса на Java" на stepik.org
+
         Часть 2.1 шаги
         [1,](https://stepik.org/lesson/12397/step/1?unit=2830)
         [2,](https://stepik.org/lesson/12397/step/2?unit=2830)
@@ -17,8 +25,8 @@
         [13,](https://stepik.org/lesson/12497/step/13?unit=2967)
         [14.](https://stepik.org/lesson/12497/step/14?unit=2967)
 
-        Если желаете повторить по java такие темы как Generics, Collections и Map, Наследование,
-        то можно посмотреть другие шаги части 2 этого курса.
+        *Если желаете повторить по java такие темы как Generics, Collections и Map, Наследование,
+        то можно посмотреть другие шаги части 2 этого курса.*
 
         Некоторые замечания к теории:
 
