@@ -6,14 +6,14 @@
 
         **Теоретические материалы по авторизации:**
 
-        [HttpSession](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/HttpSession.html)
+        * [HttpSession](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/HttpSession.html)
 
-        [Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+        * [Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
         [[1]](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
         [[2]](https://javaee.github.io/javaee-spec/javadocs/javax/servlet/http/Cookie.html)
 
 
-        Курс "Разработка веб сервиса на Java" на stepik.org
+        * Курс "Разработка веб сервиса на Java" на stepik.org
 
         Часть 2.1 шаги
         [1,](https://stepik.org/lesson/12397/step/1?unit=2830)
@@ -28,7 +28,7 @@
         *Если желаете повторить по java такие темы как Generics, Collections и Map, Наследование,
         то можно посмотреть другие шаги части 2 этого курса.*
 
-        Некоторые замечания к теории:
+        Некоторые замечания к курсу:
 
         - В этом курсе в качестве контейнера сервлетов используется Jetty,
         а не Tomcat, который вы возможно использовали при решении задачи 3.2.
