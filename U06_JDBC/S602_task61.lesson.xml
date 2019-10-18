@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 6.1" id="77b094c3-97c9-4b97-a6db-f661b7a4156c">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        ###Задание:
+
+        В проект сделанный при выполнении
+        [Задачи 5.1](https://ulearn.me/course/javatech/Zadacha_5_1_96232ef7-5c4c-4094-80fe-08e609a4eef9)
+        добавить сохранение пользователей в реляционную базу данных.
+
+        TODO
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech61</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
