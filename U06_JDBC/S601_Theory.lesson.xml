@@ -1,6 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide xmlns="https://ulearn.me/schema/v2" title="JDBC. Теория" id="dee6ac4c-72b8-4fea-b2c4-113b98faace6">
     <markdown>
-        TODO
+        В этом модуле мы познакомимся с JDBC и реализуем сохранение пользователей в базу данных MySQL.
+        Это задание будет развитием проекта, который мы сделали
+        в модуле 5 в [Задаче 5.1.](https://ulearn.me/course/javatech/Zadacha_5_1_96232ef7-5c4c-4094-80fe-08e609a4eef9)
+
+        **Теоретические материалы по JDBC:**
+
+        - Курс "Разработка веб сервиса на Java" на stepik.org
+        [Часть 3.1 JDBC](https://stepik.org/lesson/12404/step/1?unit=2834)
+
+        - [примеры кода](https://github.com/vitaly-chibrikov/stepic_java_webserver/tree/master/L3.1%20JDBC)
+
+        **Дополнительные материалы по JDBC:**
+
+        - [Раздел про JDBC](https://docs.oracle.com/javase/tutorial/jdbc/TOC.html) на сайте The Java Tutorials
     </markdown>
 </slide>
