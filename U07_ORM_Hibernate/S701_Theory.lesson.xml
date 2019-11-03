@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="ORM, Hibernate. Теория" id="5b828b1f-7036-44db-aa27-f5083cc30320">
+    <markdown>
+        В этом модуле мы познакомимся с такими понятиями как ORM, JPA и его реализацией - Hibernate.
+        Это задание будет продолжением проекта, который мы сделали
+        в модуле 6 в [Задаче 6.1.](https://ulearn.me/course/javatech/Zadacha_6_1_77b094c3-97c9-4b97-a6db-f661b7a4156c)
+
+        **Теоретические материалы по ORM, JPA, Hibernate:**
+
+        - Курс "Разработка веб сервиса на Java" на stepik.org
+        [Часть 3.2 ORM](https://stepik.org/lesson/12405/step/7?unit=2835)
+        (лекция на [youtube](https://youtu.be/AAztH2Hb0dM) этого же лектора на эту же тему записанная в аудитории)
+
+        - [примеры кода](https://github.com/vitaly-chibrikov/stepic_java_webserver/tree/master/L3.2%20ORM)
+
+        - Курс "Разработка на Java (2018) | Технострим"
+        [лекция 7 Hibernate](https://youtu.be/dMcyZ73Fnds)
+
+        - [примеры кода](https://github.com/rybalkinsd/atom/tree/master/lecture06)
+
+        **Дополнительные материалы:**
+
+        - https://habr.com/en/post/265061/
+    </markdown>
+</slide>

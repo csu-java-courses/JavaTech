@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<unit xmlns="https://ulearn.me/schema/v2" title="7. ORM Hibernate" id="5b1e2e18-b6e3-432e-ba82-1e5ece94f647" url="ORM_Hibernate">
+  <slides>
+    <add>S*.xml</add>
+  </slides>
+</unit>

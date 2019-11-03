@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 7.1" id="462d6e18-feab-4b7c-bfca-9f0a9fac77f4">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        ###Задание:
+
+        Ознакомьтесь с теоретическими материалами.
+
+        Проект сделанный при выполнении
+        [Задачи 6.1](https://ulearn.me/course/javatech/Zadacha_6_1_77b094c3-97c9-4b97-a6db-f661b7a4156c)
+        переделайте на использование Hibernate вместо чистого JDBC.
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech71</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
