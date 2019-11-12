@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Spring Core. Теория" id="731af3b6-fcf5-4216-84cd-e234f4e0ceea">
+    <markdown>
+
+        Spring - самый популярный framework в мире java разработки.
+
+        В этом модуле мы познакомимся с его базовыми концепциями: IoC/DI, Bean, Context, Configuration
+
+        **Теоретические материалы по Spring Core:**
+
+        - Официальная документация Spring. [Обзор Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html)
+
+        - Официальная документация Spring. [Spring Core. Глава 1. The IoC Container](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#spring-core).
+
+        - [Видео курс по основам Spring Framework.](https://www.youtube.com/watch?v=3wBteulZaAs&amp;list=PL6jg6AGdCNaWF-sUH2QDudBRXo54zuN1t)
+
+        - [примеры кода к видео курсу](https://github.com/yuriytkach/spring-basics-course-project/tree/master)
+
+        **Дополнительные материалы:**
+
+        - https://habr.com/ru/post/470305/
+    </markdown>
+</slide>

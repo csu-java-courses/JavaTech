@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 8.1" id="9170baf9-384b-41bc-8315-832d7a63ffa9">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="5"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        ###Задание:
+
+        Ознакомьтесь с теоретическими материалами.
+
+        Запустите и разберитесь как устроен и работает
+        [код](https://github.com/yuriytkach/spring-basics-course-project/tree/master)
+        из [видеокурса](https://www.youtube.com/watch?v=3wBteulZaAs&amp;list=PL6jg6AGdCNaWF-sUH2QDudBRXo54zuN1t)
+
+        * добавьте город для Client
+        * добавьте типов для Event
+        * измените базу с derby на h2 или mysql
+        * убедитесь что все логгеры пишут в указанные вами места с указанными вами настройками
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech81</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
