@@ -7,9 +7,10 @@
 
         Ознакомьтесь с теоретическими материалами.
 
-        Запустите и разберитесь как устроен и работает
+        Разберитесь как устроен и работает
         [код](https://github.com/yuriytkach/spring-basics-course-project/tree/master)
-        из [видеокурса](https://www.youtube.com/watch?v=3wBteulZaAs&amp;list=PL6jg6AGdCNaWF-sUH2QDudBRXo54zuN1t)
+        из [видеокурса](https://www.youtube.com/watch?v=3wBteulZaAs&amp;list=PL6jg6AGdCNaWF-sUH2QDudBRXo54zuN1t),
+        и запустите его.
 
         * добавьте город для Client
         * добавьте типов для Event
