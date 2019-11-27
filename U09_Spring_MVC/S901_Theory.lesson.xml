@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Spring MVC. Теория" id="9ecaabe4-c61a-42ce-9262-8b4311407dd3">
+    <markdown>
+
+        Spring MVC - фреймворк, который обеспечивает работу web-интерфейса приложения согласно паттерну Model - View - Controller (Модель - Вид - Контроллер).
+
+        **Теоретические материалы по Spring MVC:**
+
+        - Официальная документация Spring. [Spring Web MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#spring-web).
+
+        - [Spring MVC — основные понятия, архитектура](http://javastudy.ru/spring-mvc/spring-mvc-basic/)
+
+        - [Цикл статей по Spring MVC](https://easyjava.ru/category/spring/spring-web-mvc/)
+
+        **Дополнительные материалы:**
+
+        - [REST API](https://medium.com/@andr.ivas12/rest-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%BC-90a0bca0bc78)
+    </markdown>
+</slide>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 8.1" id="14801d6e-609d-4f71-9cf6-aecd9532c69c">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        ###Задание:
+
+        Реализуйте при помощи Spring MVC приложение,
+        позволяющее вести список покупок:
+
+        - Просматривать список покупок
+        - Добавлять элемент в список
+        - Удалять элемент из списка
+        - Отмечать элемент купленным
+
+
+        Выложите получившийся проект на github и вставьте в поле ссылку на него.
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech91</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
