@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Дополнительные задания" id="36f0bbb6-bff5-4049-8dc0-7b7c774a5a6f">
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="100"/>
+    <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
+    <markdown>
+        Оформите решения в виде репозиториев на github.
+
+    </markdown>
+    <exercise.file>
+        <initialCode>https://github.com/username/javatech</initialCode>
+        <hideExpectedOutput>true</hideExpectedOutput>
+        <comment>Принято</comment>
+        <expected>github.com</expected>
+        <solution>Main</solution>
+    </exercise.file>
+</slide.exercise>
