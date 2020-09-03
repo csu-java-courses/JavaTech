@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide xmlns="https://ulearn.me/schema/v2" title="Часть 1. Подготовка" id="da859e7d-7c23-49de-9171-8b27171080f6">
     <markdown>
-        - Установите JDK (Java Development Kit) [Java SE 8u221](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-        - Установите среду разработки [IntelliJ IDEA Community 2019.2.1](https://www.jetbrains.com/idea/download/other.html)
+        - Установите JDK 11 (Java Development Kit), [например AdoptOpenJDK 11](https://adoptopenjdk.net/)
+        - Установите среду разработки [IntelliJ IDEA Community 2020.2.1](https://www.jetbrains.com/idea/download/other.html)
     </markdown>
 </slide>

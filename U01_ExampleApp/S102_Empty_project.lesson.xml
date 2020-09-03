@@ -9,19 +9,19 @@
 
         ```
         Language: Java
-        Spring Boot: 2.1.7
+        Spring Boot: 2.3.3
         Project Metadata:
             Group: com.example
             Artifact: demo-web
             Packaging: Jar
-            Java: 8
+            Java: 11
         ```
 
         В качестве единственной зависимости добавьте
 
-        `Dependencies: Spring Web Starter`
+        `Dependencies: Spring Web`
 
-        И скачайте сконфигурированный пустой проект по кнопке "Generate the project"
+        И скачайте сконфигурированный пустой проект по кнопке "Generate"
 
         ### 2.2. Запуск
 
@@ -29,7 +29,7 @@
 
         Это классическое java приложение с точкой входа в `public static void main` методе, который в нашем случае находится в классе `DemoWebApplication`
 
-        Запустите приложение в отладочном режиме
+        Запустите приложение в отладочном режиме.
 
         По логам при запуске видно что приложение запустилось на порту 8080 и готово обслужить http запросы.
 
@@ -61,7 +61,7 @@
         &lt;parent&gt;
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
-            &lt;version&gt;2.1.7.RELEASE&lt;/version&gt;
+            &lt;version&gt;2.3.3.RELEASE&lt;/version&gt;
             &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
         &lt;/parent&gt;
         </code>
@@ -72,9 +72,9 @@
 
         Среди прочих есть зависимости
 
-        - Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.22
+        - Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37
         - Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.22
-        - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.22
+        - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37
 
         Это зависимости с http сервером и контейнером сервлетов Apache Tomcat. Он встроен в наше spring boot приложение и позволяет нашему приложению обрабатывать http запросы.
 
