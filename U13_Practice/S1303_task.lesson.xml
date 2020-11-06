@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Дополнительные задания" id="36f0bbb6-bff5-4049-8dc0-7b7c774a5a6f">
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Защита работы" id="daef422e-81aa-4889-a876-245eee8d1bbb">
     <scoring group="homework" passedTestsScore="0" codeReviewScore="100"/>
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
-        Оформите решения в виде репозиториев на github.
+        Оформите приложение в виде репозитория на github.
 
     </markdown>
     <exercise.file>

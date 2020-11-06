@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 11.1" id="00657c13-c32a-46ae-84f5-b7bfffa965da">
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 12.1" id="00657c13-c32a-46ae-84f5-b7bfffa965da">
     <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
@@ -9,13 +9,13 @@
 
         1. Напишите 2 интеграционных теста, проверяющих взаимодействие контролера, сервиса и БД.
 
-        2. Напишите 5 юнит-тестов для сервиса, используя моки и заглушки.
+        2. Напишите 2 юнит-теста для сервиса, используя моки и заглушки.
 
         Выложите код приожения с тестами на github и вставьте в поле ссылку на него.
 
     </markdown>
     <exercise.file>
-        <initialCode>https://github.com/username/javatech111</initialCode>
+        <initialCode>https://github.com/username/javatech121</initialCode>
         <hideExpectedOutput>true</hideExpectedOutput>
         <comment>Принято</comment>
         <expected>github.com</expected>

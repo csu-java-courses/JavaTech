@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="JMS. Теория" id="fff830c9-6897-4898-ac61-4aaf4f1d75fc">
+    <markdown>
+
+        JMS API (Java Message Service) - стандартное API для пересылки сообщений между java приложениями.
+        Служит для организации очередей обработки, распределенных вычислений, событийно-ориентированной архитектуры и т.д.
+
+        AMQP (Advanced Message Queuing Protocol) - открытый протокол для передачи сообщений между компонентами системы.
+        Разработан для унификации диспетчеров передачи сообщений (брокеров).
+
+        JMS API для работы нуждается в брокере сообщений.
+
+        **Теоретические материалы по JMS:**
+
+        - Официальный сайт JMS со спецификацией и исходным кодом. [Java Message Service Specification](https://javaee.github.io/jms-spec/).
+
+        - [Терминология AMQP](https://ru.wikipedia.org/wiki/AMQP)
+
+        - О брокерах сообщений. [Kafka и RabbitMQ](http://nlpx.net/archives/566).
+
+        - [Spring AMQP tutorial](https://spring.io/guides/gs/messaging-rabbitmq/)
+
+        - Цикл статей по RabbitMQ.
+        [Часть 1 RabbitMQ](https://habr.com/ru/post/488654/),
+        [Часть 2 Exchanges](https://habr.com/ru/post/489086/),
+        [Часть 3 Queues](https://habr.com/ru/post/490960/)
+
+    </markdown>
+</slide>
