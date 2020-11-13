@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Docker. Теория" id="b69fbaba-b7e7-46bf-8a38-4b45fdb047f1">
+    <markdown>
+
+        Docker - утилита для управления контейнерами приложений.
+        Используется для автоматизации развертывания, переноса и масштабирования серверных приложений.
+
+        **Теоретические материалы по Docker:**
+
+        - [Установка Docker](https://docs.docker.com/engine/install/).
+
+        - [Установка Docker Compose](https://docs.docker.com/compose/install/).
+
+        - [Документация по Dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+        - [Документация по docker-compose.yml](https://docs.docker.com/compose/compose-file/).
+
+        - Подробное видео о работе с docker и docker-compose: [Docker](https://www.youtube.com/playlist?list=PLU2ftbIeotGoGFC_2lj-OplT_cItXfu48)
+
+    </markdown>
+</slide>
