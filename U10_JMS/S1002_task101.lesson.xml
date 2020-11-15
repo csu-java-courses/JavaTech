@@ -5,7 +5,7 @@
     <markdown>
         ###Задание:
 
-        Переделайте пример приложения из **Spring AMQP tutorial**,
+        Переделайте пример приложения из [**Spring AMQP tutorial**](https://github.com/ulearn-me-cource-javatech/messaging-javatech),
         так чтобы оно позволяло обмениваться сообщениями:
 
         - При вводе текста и нажатии на enter отправлять сообщение в брокер
