@@ -10,6 +10,8 @@
         - [Установка Docker](https://docs.docker.com/engine/install/).
 
         - [Установка Docker Compose](https://docs.docker.com/compose/install/).
+        
+            Если ваша версия windows не поддерживает docker, то вы можете воспользоваться виртуальным сервером из модуля 4.
 
         - [Документация по Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
