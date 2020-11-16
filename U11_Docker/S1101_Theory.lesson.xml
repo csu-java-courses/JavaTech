@@ -13,11 +13,13 @@
         
             Если ваша версия windows не поддерживает docker, то вы можете воспользоваться виртуальным сервером из модуля 4.
 
-        - [Документация по Dockerfile](https://docs.docker.com/engine/reference/builder/)
+        - [Официальная документация по Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
-        - [Документация по docker-compose.yml](https://docs.docker.com/compose/compose-file/).
+        - [Официальная документация по docker-compose.yml](https://docs.docker.com/compose/compose-file/).
 
-        - Подробное видео о работе с docker и docker-compose: [Docker](https://www.youtube.com/playlist?list=PLU2ftbIeotGoGFC_2lj-OplT_cItXfu48)
+        - [Что такое Docker, и как его использовать?](https://proglib.io/p/docker)
+
+        - [Подробное видео о работе с docker и docker-compose](https://www.youtube.com/playlist?list=PLU2ftbIeotGoGFC_2lj-OplT_cItXfu48)
 
     </markdown>
 </slide>
