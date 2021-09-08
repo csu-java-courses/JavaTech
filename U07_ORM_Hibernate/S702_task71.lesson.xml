@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 7.1" id="462d6e18-feab-4b7c-bfca-9f0a9fac77f4">
-    <scoring group="homework" passedTestsScore="0" codeReviewScore="10"/>
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="40"/>
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
         ###Задание:

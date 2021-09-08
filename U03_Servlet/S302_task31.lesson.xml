@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача 3.1" id="1b990190-d266-4dd8-81d3-4d14fc4d9f4a">
-    <scoring group="homework" passedTestsScore="0" codeReviewScore="5"/>
+    <scoring group="homework" passedTestsScore="0" codeReviewScore="20"/>
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
         Исследуйте приложение из предыдущего модуля с помощью отладчика.
