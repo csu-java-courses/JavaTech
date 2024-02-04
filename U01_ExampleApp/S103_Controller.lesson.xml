@@ -6,7 +6,7 @@
 
         ### 3.1. Класс контроллера
 
-        Создайте класс `com.example.demoweb.controller.PostsViewController`
+        Создайте класс `com.example.demo.controller.PostsViewController`
 
         Пометьте класс аннотацией `@Controller` из org.springframework.stereotype
 
