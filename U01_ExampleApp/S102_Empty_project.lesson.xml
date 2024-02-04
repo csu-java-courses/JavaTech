@@ -5,16 +5,15 @@
 
         На сайте [start.spring.io](https://start.spring.io) задайте следующие настройки
 
-        Project: Maven Project
-
         ```
+        Project: Maven Project
         Language: Java
-        Spring Boot: 2.3.3
+        Spring Boot: 3.2.2
         Project Metadata:
             Group: com.example
-            Artifact: demo-web
+            Artifact: demo
             Packaging: Jar
-            Java: 11
+            Java: 17
         ```
 
         В качестве единственной зависимости добавьте
@@ -25,9 +24,9 @@
 
         ### 2.2. Запуск
 
-        Распакуйте скачанный demo-web.zip и откройте проект в IDEA.
+        Распакуйте скачанный demo.zip и откройте проект в IDEA.
 
-        Это классическое java приложение с точкой входа в `public static void main` методе, который в нашем случае находится в классе `DemoWebApplication`
+        Это классическое java приложение с точкой входа в `public static void main` методе, который в нашем случае находится в классе `DemoApplication`
 
         Запустите приложение в отладочном режиме.
 
@@ -61,7 +60,7 @@
         &lt;parent&gt;
             &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
             &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
-            &lt;version&gt;2.3.3.RELEASE&lt;/version&gt;
+            &lt;version&gt;3.2.2.RELEASE&lt;/version&gt;
             &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
         &lt;/parent&gt;
         </code>
@@ -72,9 +71,9 @@
 
         Среди прочих есть зависимости
 
-        - Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.37
-        - Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.22
-        - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.37
+        - Maven: org.apache.tomcat.embed:tomcat-embed-core:10.1.18
+        - Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.18
+        - Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.18
 
         Это зависимости с http сервером и контейнером сервлетов Apache Tomcat. Он встроен в наше spring boot приложение и позволяет нашему приложению обрабатывать http запросы.
 
@@ -91,7 +90,7 @@
         и теперь для запуска проекта перейдите в папку target и выполните
 
         ```
-        java -jar demo-web-0.0.1-SNAPSHOT.jar
+        java -jar demo-0.0.1-SNAPSHOT.jar
         ```
 
         Убедитесь что приложение запустилось и открывается в браузере.
