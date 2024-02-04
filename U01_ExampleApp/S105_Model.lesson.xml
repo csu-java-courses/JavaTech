@@ -6,7 +6,7 @@
 
         ### 5.1. Модель
 
-        Создайте класс `com.example.demoweb.model.Post` с **private** полями
+        Создайте класс `com.example.demo.model.Post` с **private** полями
 
         - String **text**;
         - Integer **likes**;
@@ -17,7 +17,7 @@
 
         ### 5.2. Сервис
 
-        Создайте класс `com.example.demoweb.service.PostService`
+        Создайте класс `com.example.demo.service.PostService`
 
         Пометьте его аннотацией `@Service` из пакета `org.springframework.stereotype`
 
