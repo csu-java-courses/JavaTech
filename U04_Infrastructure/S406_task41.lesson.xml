@@ -4,6 +4,7 @@
     <defaultIncludeCodeFile>../_Code.java</defaultIncludeCodeFile>
     <markdown>
         Напишите инструкцию по развертыванию виртуального сервера и веб-приложений на нем.
+        *Инструкция должна включать все 5 шагов от установки ОС до настройки Nginx*
     </markdown>
     <exercise.file>
         <initialCode>1. Установить VirtualBox по ссылке http://...</initialCode>
