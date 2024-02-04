@@ -7,11 +7,13 @@
 
         ### 9.1. Скачайте patch подключения базы
 
-        [20190912_part9_db.patch](https://drive.google.com/file/d/1WQnQcN7mZmPGW97r5OYrdHeBossiEYoA/view)
+        [2_9.patch](https://drive.google.com/file/d/1-oRQRwMto2Hclq8sB3i5vTtIqAdOfVa-/view)
 
         ### 9.2. В IDEA примените патч
 
         Главное меню -> VCS -> Apply Patch...
+
+        (но так как код у всех разный, то возможно не все изменения применятся - оставшуюся часть примените вручную)
 
         Проверьте что теперь при запуске приложения список первоначальных постов пустой. Добавьте несколько постов. Перезапустите приложение. Убедитесь что добавленные посты не удалились, и отображаются.
 
@@ -27,9 +29,9 @@
 
         В следующем окне в Database/Schema вставьте
 
-        file:/home/user/demo-web/
+        file:/home/user/demo/
 
-        где /home/user/demo-web полный путь до папки с проектом
+        где /home/user/demo полный путь до папки с проектом
 
         и в поля User name/Password вставьте root/root как это определено в `application.properties`
 
