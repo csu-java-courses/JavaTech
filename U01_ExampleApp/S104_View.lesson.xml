@@ -17,7 +17,7 @@
 
         ### 4.2. Добавление view
 
-        В demo-web/src/main/resources/templates/ создайте файл list.html с таким содержимым
+        В demo/src/main/resources/templates/ создайте файл list.html с таким содержимым
 
         <code language="html">
         &lt;!DOCTYPE html&gt;
