@@ -103,7 +103,7 @@
 
         ### 2.7. Изменим порт приложения с 8080 на 8000.
 
-        Для этого необходимо в `demo-web/src/main/resources/application.properties` добавить строчку
+        Для этого необходимо в `demo/src/main/resources/application.properties` добавить строчку
 
         ```
         server.port = 8000
